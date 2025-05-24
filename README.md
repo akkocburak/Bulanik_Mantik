@@ -32,6 +32,3 @@ Bu proje, çamaşır makinesi kontrolü için bulanık mantık (fuzzy logic) kul
 - Yıkama süresi (dakika)
 - Deterjan miktarı (ml)
 
-## Geliştirici
-
-Bu proje, bulanık mantık prensiplerinin pratik bir uygulaması olarak geliştirilmiştir. 
