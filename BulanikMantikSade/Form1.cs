@@ -328,9 +328,34 @@ namespace BulanikMantikSade
         private void Form1_Load(object sender, EventArgs e)
         {
             dataGridViewKurallar = new DataGridView();
-            dataGridViewKurallar.Size = new Size(750, 720);
-            dataGridViewKurallar.Location = new Point(820, 20);
+            dataGridViewKurallar.Size = new Size(750, 650);
+            dataGridViewKurallar.Location = new Point(820, 80);
             dataGridViewKurallar.ColumnCount = 7;
+            
+            // DataGrid görünüm ayarları
+            dataGridViewKurallar.BackgroundColor = Color.White;
+            dataGridViewKurallar.BorderStyle = BorderStyle.None;
+            dataGridViewKurallar.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewKurallar.GridColor = Color.LightGray;
+            dataGridViewKurallar.RowHeadersVisible = false;
+            dataGridViewKurallar.AllowUserToAddRows = false;
+            dataGridViewKurallar.AllowUserToDeleteRows = false;
+            dataGridViewKurallar.ReadOnly = true;
+            dataGridViewKurallar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewKurallar.MultiSelect = false;
+            dataGridViewKurallar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewKurallar.EnableHeadersVisualStyles = false;
+            dataGridViewKurallar.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(51, 51, 51);
+            dataGridViewKurallar.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridViewKurallar.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dataGridViewKurallar.ColumnHeadersHeight = 40;
+            dataGridViewKurallar.RowTemplate.Height = 35;
+            dataGridViewKurallar.DefaultCellStyle.Font = new Font("Segoe UI", 9);
+            dataGridViewKurallar.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 122, 204);
+            dataGridViewKurallar.DefaultCellStyle.SelectionForeColor = Color.White;
+            dataGridViewKurallar.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+
+            // Sütun başlıkları
             dataGridViewKurallar.Columns[0].Name = "No";
             dataGridViewKurallar.Columns[1].Name = "Hassaslık";
             dataGridViewKurallar.Columns[2].Name = "Miktar";
